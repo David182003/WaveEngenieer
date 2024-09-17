@@ -1,0 +1,74 @@
+/* Estilos para la versión móvil */
+@media (max-width: 768px) {
+    .container_two{
+        display: flex;
+        justify-items: center;
+        justify-content: end;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .nav_input:checked + .nav_menu{
+        background-color: var(--colorcircle);
+        clip-path:   circle(100% at center);
+    }
+    .checkbtn{
+        display: flex;
+        align-items: center;
+    }
+    .bx{
+        font-size: 30px;
+    }
+    .a1::after{
+        content:"";
+        width: 20px;
+        height: 20px;
+        content: "";
+        display: block;
+        background-color: #000000;
+        width:40vh;
+        margin-top: 3px;
+        height: 3px;
+        clip-path:var(--clippy);
+        transition: clip-path 1s ease-in-out;
+    }
+    .btn_empezar{
+        width: 40vh;
+    }
+    .nav_menu{
+        position:fixed;
+        top: 65px;
+        background-color: var(--colorcircle);
+        height: 100%;
+        bottom: 0;
+        padding-top: 10%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+    header{
+        height: 150vw;
+        background-image: url("https://media.istockphoto.com/id/1411304340/es/foto/dos-edificios-modernos-con-ventanas-de-vidrio-dise%C3%B1o-arquitect%C3%B3nico-de-edificios-espacio-de.jpg?s=612x612&w=0&k=20&c=O9OD3d114Heth8IwWh3tz57MZEuvXDqoHhUCeZK3Guo=");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .Container_header_one{
+        background-color: rgba(36, 36, 36, 0.322);
+        width: 100%;
+        padding: 20% 0%;
+        
+        text-align: center;
+    }
+    h1{
+        width: 100%;
+    }
+    .Container_header_two{
+        display: none;
+    }
+    
+}
